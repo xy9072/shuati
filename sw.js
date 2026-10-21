@@ -1,4 +1,4 @@
-const CACHE='shuati-mobile-shell-v1';
+const CACHE='shuati-mobile-shell-v3-banks';
 const FILES=['./','./index.html','./style.css','./app.js','./manifest.webmanifest','./icon.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting()));
